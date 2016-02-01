@@ -23,14 +23,32 @@ if path == "left":
     else:
         print "Well, %s got you nowhere" %orc
         
-    print "GAME OVER!"
+    print finish="GAME OVER!"
     
-elif path == "right"
+elif path == "right":
     print "The path goes uphill.\nYou are exhausted by te time you reach the top.\n You hear the cavern collapse behind you."
     print "You reach a cliff. Below you can see a orc. The orc has a sword as well as a bow and arrow."
-    print "You ponder on whether to navigate the narrow path next to the cliff to an opening on the other side, to jump across or to throw a stone at the orc..."    
+    print "You ponder on whether to navigate the narrow path next to the cliff to an opening on the other side, to jump across or to throw a stone at the orc..." 
+    
+    print "1. Navigate the narrow path."
+    print "2. Jump!"
+    print "3. Throw a stone."
     
     cliff = raw_input("> ")
     
-    if cliff == "1"
+    if cliff == "1":
+        print "As you move you stumble alerting the orc.\nThe orc notices you and shoots an arrow at you. It impales your knee as you enter the opening."
+        print "Although you have an arrow in the knee you win"
+        print finish = "YOU WIN"
+    elif cliff == "2":
+        print "Epic fall!"
+        print finish="GAME OVER!"   
+    elif cliff == "3":
+        print "You hit the orc and knock it out.\nHowever, fear gets the better of you and you pass out."
+        print finish="GAME OVER!"
+        
+else:
+    print "You're probably better off not entering the cave anyway."
+    print finish="GAME OVER!"
     
+

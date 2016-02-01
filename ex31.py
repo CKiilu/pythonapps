@@ -29,6 +29,7 @@ if path == "1":
         print "Well, %s got you nowhere" %orc
         
     print finish[0]
+    print "To restart type python ex31.py"
     
 elif path == "2":
     print "The path goes uphill.\nYou are exhausted by te time you reach the top.\n You hear the cavern collapse behind you."
@@ -47,11 +48,16 @@ elif path == "2":
         print finish[1]
     elif cliff == "2":
         print "Epic fall!"
-        print finish[0]  
+        print finish[0]
+        print "To restart type python ex31.py"  
     elif cliff == "3":
         print "You hit the orc and knock it out.\nHowever, fear gets the better of you and you pass out."
         print finish[0]
+        print "To restart type python ex31.py"
         
 else:
     print "You're probably better off not entering the cave anyway."
     print finish[0]
+    print "To restart type python ex31.py"
+    
+for

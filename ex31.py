@@ -58,6 +58,6 @@ elif path == "2":
 else:
     print "You're probably better off not entering the cave anyway."
     print finish[0]
-    print "To restart type python ex31.py"
+    print "To restart type 'python ex31.py'."
     
-for
+

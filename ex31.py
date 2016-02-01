@@ -2,11 +2,16 @@ print "MY PURELY TEXT RPG"
 
 print "Game input is done using numbers only."
 
+finish = ["GAME OVER!","YOU WIN!"]
+
 print "You enter a cave.\n The path splits into two branches.\n Do you go left or right?"
+
+print "1. left"
+print "2. right"
 
 path = raw_input("> ")
 
-if path == "left":
+if path == "1":
     print ("The path goes downhill.\n The cavern collapses behind you.\nBefore you appears a orc.\nWhat do you do?") 
     print "1. Run"
     print "2. Hide"
@@ -23,9 +28,9 @@ if path == "left":
     else:
         print "Well, %s got you nowhere" %orc
         
-    print finish="GAME OVER!"
+    print finish[0]
     
-elif path == "right":
+elif path == "2":
     print "The path goes uphill.\nYou are exhausted by te time you reach the top.\n You hear the cavern collapse behind you."
     print "You reach a cliff. Below you can see a orc. The orc has a sword as well as a bow and arrow."
     print "You ponder on whether to navigate the narrow path next to the cliff to an opening on the other side, to jump across or to throw a stone at the orc..." 
@@ -39,16 +44,14 @@ elif path == "right":
     if cliff == "1":
         print "As you move you stumble alerting the orc.\nThe orc notices you and shoots an arrow at you. It impales your knee as you enter the opening."
         print "Although you have an arrow in the knee you win"
-        print finish = "YOU WIN"
+        print finish[1]
     elif cliff == "2":
         print "Epic fall!"
-        print finish="GAME OVER!"   
+        print finish[0]  
     elif cliff == "3":
         print "You hit the orc and knock it out.\nHowever, fear gets the better of you and you pass out."
-        print finish="GAME OVER!"
+        print finish[0]
         
 else:
     print "You're probably better off not entering the cave anyway."
-    print finish="GAME OVER!"
-    
-
+    print finish[0]
